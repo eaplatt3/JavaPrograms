@@ -1,7 +1,7 @@
 package lab2_3;
 
 //********************************************************************
-//PalindromeTester.java							Author:	Lewis/Loftus
+//PalindromeTester.java						
 //
 //Demonstrates	the	use	of	nested	while	loops.
 //********************************************************************

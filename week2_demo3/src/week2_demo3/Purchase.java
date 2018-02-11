@@ -1,9 +1,4 @@
 package week2_demo3;
-//********************************************************************
-//Purchase.java       Author: Lewis/Loftus
-//
-//Demonstrates the use of the NumberFormat class to format output.
-//********************************************************************
 
 import java.util.Scanner;
 import java.text.NumberFormat;

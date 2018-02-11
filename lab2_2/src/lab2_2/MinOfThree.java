@@ -1,7 +1,7 @@
 package lab2_2;
 
 //********************************************************************
-//MinOfThree.java							Author:	Lewis/Loftus
+//
 //
 //Demonstrates	the	use	of	nested	if	statements.
 //********************************************************************

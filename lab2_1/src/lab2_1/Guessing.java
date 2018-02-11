@@ -1,6 +1,5 @@
 package week2_demo4;
 //********************************************************************
-//		Guessing.java							Author:	Lewis/Loftus
 //
 //		Demonstrates the	use	of	a	block	statement	in	an	if-else.
 //********************************************************************

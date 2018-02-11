@@ -1,5 +1,4 @@
 //********************************************************************
-//  RandomNumbers.java       Author: Lewis/Loftus
 //
 //  Demonstrates the creation of pseudo-random numbers using the
 //  Random class.
