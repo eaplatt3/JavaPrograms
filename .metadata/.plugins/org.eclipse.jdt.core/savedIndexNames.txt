@@ -1,0 +1,12 @@
+INDEX VERSION 1.130+C:\Users\USER\Desktop\School\Spring 2018\BCS345 - JAVA Programming\Classwork\.metadata\.plugins\org.eclipse.jdt.core
+2236642351.index
+1889977882.index
+116686516.index
+1759303268.index
+3779711756.index
+414589675.index
+2768476762.index
+2017493686.index
+2001274889.index
+2261956424.index
+2521752474.index
