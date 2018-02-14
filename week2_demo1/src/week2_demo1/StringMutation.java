@@ -1,7 +1,6 @@
 package week2_demo1;
 
 //********************************************************************
-//StringMutation.java       Author: Lewis/Loftus
 //
 //Demonstrates the use of the String class and its methods.
 //********************************************************************
