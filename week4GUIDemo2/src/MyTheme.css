@@ -1,0 +1,13 @@
+.button{
+	-fx-background-color:
+		linear-gradient(#af0000, #d6d6d6d6),
+		linear-gradient(#fcfcfc 0%, d9d9d9 20%, #6b0101 100%),
+		linear-gradient(#dddddd 0%, #000000 30%);
+	-fx-background-radius: 8,7,6;
+	-fx-background-insets: 0,1,2;
+	-fx-text-fill: #ff0000;
+	-fx-font-size: 15;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1);	
+	
+	
+}
