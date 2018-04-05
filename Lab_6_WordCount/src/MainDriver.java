@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -31,7 +33,9 @@ public class MainDriver extends Application {
 				System.exit(0);
 			}
 		});
-
+		
+		txtFld = new TextArea();
+		
 		Menu fileMenu = new Menu("File", null, saveMenuItm, openMenuItm, closeMenuItm);
 		MenuBar mb = new MenuBar(fileMenu);
 
@@ -63,8 +67,7 @@ public class MainDriver extends Application {
 			}
 		});
 
-		//Text Field
-		TextArea txtFld = new TextArea();
+
 		txtFld.setPrefSize(1285, 650);
 		txtFld.setWrapText(true);
 
@@ -98,47 +101,53 @@ public class MainDriver extends Application {
 	}
 
 	//Function to count words and Spaces
-	public static String wordcount(String text) { 
+	public  String wordcount(String text) { 
 		if (text == null || text.isEmpty()) { 
 			return "No Stats"; 
 		} 
+		int count=0;
+		Scanner sn=new Scanner(text);
+		while(sn.hasNext()) {
+			sn.next();
+			count++;
+		}
 
-		int wordCtn = 0;
-		int spaceCtn = 0;
-		boolean isWord = false; 
-		int endOfLine = text.length() - 1; 
-		char[] characters = text.toCharArray(); 
-		for (int i = 0; i < characters.length; i++) { 
+//		int wordCtn = 0;
+//		int spaceCtn = 0;
+//		boolean isWord = false; 
+//		int endOfLine = text.length() - 1; 
+//		char[] characters = text.toCharArray(); 
+//		for (int i = 0; i < characters.length; i++) { 
+//
+//			// if the char is a letter, word = true. 
+//			if (Character.isLetter(characters[i]) && i != endOfLine) { 
+//				isWord = true;
+//			}
+//
+//			// if char isn't a letter and there have been letters before, 
+//			// counter goes up.  
+//
+//			else if (!Character.isLetter(characters[i]) && isWord) {
+//				wordCtn++; 
+//				isWord = false;
+//				spaceCtn++;
+//
+//				// last word of String; if it doesn't end with a non letter, it 
+//				// wouldn't count without this. 
+//			}
+//
+//
+//			else if (Character.isLetter(characters[i]) && i == endOfLine) { 
+//				wordCtn++;
+//			}
+//
+//		} 
 
-			// if the char is a letter, word = true. 
-			if (Character.isLetter(characters[i]) && i != endOfLine) { 
-				isWord = true;
-			}
-
-			// if char isn't a letter and there have been letters before, 
-			// counter goes up.  
-
-			else if (!Character.isLetter(characters[i]) && isWord) {
-				wordCtn++; 
-				isWord = false;
-				spaceCtn++;
-
-				// last word of String; if it doesn't end with a non letter, it 
-				// wouldn't count without this. 
-			}
-
-
-			else if (Character.isLetter(characters[i]) && i == endOfLine) { 
-				wordCtn++;
-			}
-
-		} 
-
-		return "Words " +wordCtn+ "\nSpaces " + spaceCtn;
+		return "Words " +count;//+ "\nSpaces " + spaceCtn;
 	}
 
 	//Function to count vowels
-	public static String vowelcount(String text) {	
+	public  String vowelcount(String text) {	
 		int vowelCtn = 0;
 		char[] characters = text.toCharArray(); 
 		for (int i = 0; i < characters.length; i++) { 
@@ -154,7 +163,7 @@ public class MainDriver extends Application {
 	}
 
 	//Function to count Lines
-	public static int linecount(String text) {
+	public  int linecount(String text) {
 		return  text.split("[\r\n]").length;
 	}
 }
